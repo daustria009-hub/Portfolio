@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: your name -->
+  <title>Dave Laurence Austria | Portfolio</title>
+  <meta name="description" content="Personal portfolio: skills, projects and contact.">
+  <!-- EDIT: the letter in the tab icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2300a84f'/><text x='50' y='72' font-family='sans-serif' font-size='62' font-weight='700' fill='white' text-anchor='middle'>D</text></svg>">
+  <!-- Applies the saved light/dark choice before the page is painted, so there
+       is no flash of the wrong colors. The toggle itself lives in script.js. -->
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">&lt;Dave /&gt;</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO / PERSONAL INFO ================= -->
+    <section class="hero">
+      <!-- EDIT: replace with your photo (put  · the file in this folder, e.g. photo.jpg) -->
+      <img class="avatar" src="images/profile/placeholder-1.svg" alt="Dave Laurence Austria">
+      <div>
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Dave Laurence Austria</h1>
+        <p class="role">Full Stack Developer · BSIT 4th Year Student </p>
+        <p class="lead">A fourth year student in Nueva University of Science and Technology.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Cards are built from projects.js. Edit your projects there. -->
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <!-- ================= SKILLS / LANGUAGES ================= -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Languages</h3>
+          <!-- EDIT: add or remove tags -->
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>Python</li><li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks &amp; libraries</h3>
+          <ul class="tags">
+            <li>Flask</li><li>Jinja2</li><li>Bootstrap</li><li>CustomTkinter</li><li>Angular</li><li>Ionic</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Databases &amp; tools</h3>
+          <ul class="tags">
+            <li>MySQL</li><li>MariaDB</li><li>XAMPP</li><li>Git</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Other skills</h3>
+          <ul class="tags">
+            <li>REST APIs</li><li>Client-server apps</li><li>Session authentication</li><li>Debugging</li><li>Troubleshooting</li><li>Problem solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <h2>About me</h2>
+      <p class="role">Let me help and solve your problems.</p>
+      <ul class="facts">
+        <li><span>Location</span>Bongabon, Nueva Ecija, Philippines</li>
+        <li><span>Open to</span>[Internships / Freelance / Full-time]</li>
+      </ul>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out and let's have a talk.</p>
+      <!-- EDIT: the LinkedIn link below is still a placeholder and goes nowhere.
+           Change BOTH the link (the href="...") and the text shown under the
+           label. -->
+      <ul class="facts contact-list">
+        <li>
+          <span>Email</span>
+          <a href="mailto:daustria009@gmail.com">daustria009@gmail.com</a>
+        </li>
+        <li>
+          <span>GitHub</span>
+          <a href="https://github.com/daustria009-hub" target="_blank" rel="noopener">@daustria009-hub</a>
+        </li>
+        <li>
+          <span>Facebook</span>
+          <a href="https://www.facebook.com/D50.austria.0009/" target="_blank" rel="noopener">Dave Austria</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dave Laurence Austria. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

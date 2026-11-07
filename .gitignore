@@ -1,0 +1,9 @@
+# Uncompressed source PNGs of the Agri Calendar screenshots (~11 MB).
+# The site uses the .jpg versions next to them; nothing links to these.
+images/agrical/originals/
+
+# Windows / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
